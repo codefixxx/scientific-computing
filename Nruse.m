@@ -1,9 +1,9 @@
 syms x
-f_sym(x) = x.^3 - 4*x + 1;       
-f_diff_sym = diff(f_sym, x);    
+f_sym(x) = x.^3 - 4*x + 1;
+f_diff_sym = diff(f_sym, x);
 
-f      = matlabFunction(f_sym);      
-f_diff = matlabFunction(f_diff_sym) 
+f      = matlabFunction(f_sym);
+f_diff = matlabFunction(f_diff_sym)
 intervals=IVT(-5,5,0.1,f)
 rows=size(intervals,1);
 for i = 1:rows

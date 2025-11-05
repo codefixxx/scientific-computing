@@ -9,7 +9,8 @@ function root=bs(a,b,f,tol)
             if f(a)*f(c)<0
                 b=c;
             elseif f(a)*f(c)==0
-                retrun c;
+                root=c;
+                return;
             else 
                 a=c;
             end
