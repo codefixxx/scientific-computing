@@ -34,4 +34,13 @@ x = a:h:b;
 I = (2*h/45)*(7*f(x(1))+32*f(x(2))+12*f(x(3))+32*f(x(4))+7*f(x(5)));
 fprintf('Boole = %g\n', I);
 
-%weddle's
+% Weddle's rule (apply over groups of 6 subintervals)
+ a=0; 
+ b=6; 
+ n=6; 
+ h=(b-a)/n; 
+ X=a:h:b;
+% Weddle's for one block of 6:
+I = (3*h/10)*(f(X(1))+f(X(7))+5*(f(X(3))+f(X(5)))+1*(f(X(2))+f(X(4))));
+fprintf('Weddle (one block) = %g\n', I);
+
