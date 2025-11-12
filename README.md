@@ -58,7 +58,7 @@ The collection covers:
 
 ## 🛠 Requirements
 - MATLAB **R2022a** or later (older versions may work).  
-- No external toolboxes required.  
+- Symbolic toolbox is required to use syms.  
 
 ---
 
